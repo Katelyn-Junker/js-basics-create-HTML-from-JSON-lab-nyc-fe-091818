@@ -55,3 +55,4 @@ function fillInMovieData() {
     const div = document.querySelector('#cast')
     div.appendChild(li)
 }
+}
