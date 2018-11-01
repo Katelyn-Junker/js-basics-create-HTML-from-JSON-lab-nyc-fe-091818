@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   
 });
 
-function fillInMovieData() {
+function fillInMovieData(movie) {
   const currentMovie = movies['Titanic']
   
   const title = currentMovie.title // "Titanic"
