@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const titanicButton = document.querySelector('#Titanic')
   const terminatorButton = document.querySelector('#Terminator-2')
   
-  titanicButton.addEventListener('click', fillInMovieData)
-  terminatorButton.addEventListener('click', fillInMovieData)
+  titanicButton.addEventListener('click',() => fillInMovieData('Titanic'))
+  terminatorButton.addEventListener('click',() => fillInMovieData('Terminator-2'))
   
 });
 
 function fillInMovieData(movie) {
-  const currentMovie = movies['Titanic']
+  const currentMovie = movies[movie]
   
   const title = currentMovie.title // "Titanic"
   const titleDiv = document.querySelector('#title')
