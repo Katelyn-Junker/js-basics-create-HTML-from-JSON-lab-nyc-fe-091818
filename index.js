@@ -39,12 +39,11 @@ function fillInMovieData() {
   const audienceScoreDiv = document.querySelector('#audienceScore')
   audienceScoreDiv.innerText = audienceScore
   
-  for (let castMember of currentMovie.cast) {
-    console.log(castMember)
+  for (let review of currentMovie.review) {
     const li = document.createElement('li')
     // <li></li>
-    li.innerText = castMember.role + ': ' + castMember.actor
-    const div = document.querySelector('#cast')
+    li.innerText = review.username + ': ' + review.content
+    const div = document.querySelector('#reviews')
     div.appendChild(li)
   }
 }
