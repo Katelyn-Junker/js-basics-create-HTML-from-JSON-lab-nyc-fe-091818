@@ -44,6 +44,8 @@ function fillInMovieData(){
   
   for (let castMember of currentMovie.cast){
     console.log(castMember)
+    const li = document.createElement('li')
+   // li.innerText = 
   }
   
 }
