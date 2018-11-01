@@ -13,20 +13,34 @@ function fillInMovieData(){
   
   
   
-  const title = movies['Titanic'].title // "Titanic"
+  const title = currentMovie.title // "Titanic"
   const titleDiv= document.querySelector('title')
   titleDiv.innerText = title
   
-  const director =movies['Titanic'].director
+  const director = currentMovie.director
   const directorDiv = document.querySelector('#director')
   directorDiv.innerText = director 
   
   
-  const genre =movies['Titanic'].genre
+  const genre = currentMovie.genre
   const genreDiv = document.querySelector('#genre')
   genreDiv.innerText = genre 
   
-  const filmRating =movies['Titanic'].filmRating
+  const filmRating = currentMovie.filmRating
   const filmRatingDiv = document.querySelector('#filmRating')
   filmRatingDiv.innertext = filmRating 
+  
+  const poster = currentMovie.poster
+  const posterImg = document.querySelector('#poster')
+  posterImg.src = poster
+  
+  const description = currentMovie.description
+  const descriptionDiv = document.querySelector('#description')
+  descriptionDiv.innerText = description 
+  
+  const audienceScore = currentMovie.audienceScore
+  const audienceScoreDiv = document.querySelcetor('#audienceScore')
+  audienceScoreDiv.innerText = audienceScore
+  
+  
 }
