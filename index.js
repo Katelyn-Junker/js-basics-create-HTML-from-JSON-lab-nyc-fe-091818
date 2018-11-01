@@ -42,5 +42,8 @@ function fillInMovieData(){
   const audienceScoreDiv = document.querySelcetor('#audienceScore')
   audienceScoreDiv.innerText = audienceScore
   
+  for (let castMember of currentMovie.cast){
+    console.log(castMember)
+  }
   
 }
