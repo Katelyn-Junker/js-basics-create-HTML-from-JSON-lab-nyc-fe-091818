@@ -19,10 +19,12 @@ function fillInMovieData(){
   
   const director =movies['Titanic'].director
   const directorDiv = document.querySelector('#director')
-  directorDiv.innertext = director 
+  directorDiv.innerText = director 
   
   
   const genre =movies['Titanic'].genre
-  const directorDiv = document.querySelector('#director')
-  directorDiv.innertext = director 
+  const genreDiv = document.querySelector('#genre')
+  genreDiv.innerText = genre 
+  
+  
 }
