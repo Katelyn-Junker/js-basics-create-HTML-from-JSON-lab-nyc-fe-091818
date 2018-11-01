@@ -22,7 +22,7 @@ function fillInMovieData(){
   directorDiv.innertext = director 
   
   
-  const director =movies['Titanic'].director
+  const genre =movies['Titanic'].genre
   const directorDiv = document.querySelector('#director')
   directorDiv.innertext = director 
 }
