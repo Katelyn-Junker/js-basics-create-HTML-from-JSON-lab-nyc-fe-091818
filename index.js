@@ -55,7 +55,9 @@ function fillInMovieData(movie) {
     div.appendChild(li)
   }
   
-  
+  const reviewsDiv = document.querySelector('#reviews')
+  while (reviewsDiv.hasChildNodes()) {
+    reviewsDiv.removeChild(reviewsDiv.firstChild)
   }
   
   for (let review of currentMovie.reviews) {
